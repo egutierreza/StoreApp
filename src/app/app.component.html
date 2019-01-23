@@ -1,0 +1,20 @@
+<div class="grid-wrapper">
+    <div class="navbar">
+        <ul>
+            <li><a routerLink="profile"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/13690761_293787717678716_3922516567286477320_n.jpg?_nc_cat=0&oh=c957b56177755a68a57219cc6a2febf0&oe=5BE1B857" class="profile-picture"></a></li>
+            <li>
+                <a routerLink="dashboard">
+                    <i class="fa fa-desktop"></i><br>Dashboard
+                </a>
+            </li>
+            <li><a routerLink="shop"><i class="fa fa-shopping-bag"></i><br>Shopping</a></li>
+            <li><a href=""><i class="fa fa-envelope-o"></i><br>Messages</a></li>
+            <li class="bottom"><a href=""><i class="fa fa-gears"></i><br>Settings</a></li>
+            <li ><a href=""><i class="fa fa-sign-out"></i><br>Sign Out</a></li>
+        </ul>
+    </div>
+    <div class="left-col"></div>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

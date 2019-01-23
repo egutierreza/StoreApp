@@ -1,0 +1,36 @@
+<div class="fixed-sidebar-wrapper">
+    <div class="newsfeed-menu">
+        <div class="menu-searchbar">
+            <input type="text" placeholder="Search">
+            <button class="search-button">                
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div class="newsfeed-menu-options button-group">
+            <button class="newsfeed-menu-network secondary"
+                (click)="showFollowing()">
+                <label>Following</label><br>
+            </button>
+            <button class="newsfeed-menu-trending secondary"
+                (click)="showTrending()">
+                <label>Trending</label><br>
+            </button>
+            <button class="newsfeed-menu-suggested secondary">
+                <label>Suggested</label><br>
+            </button>
+            <button class="newsfeed-menu-filters secondary">
+                <i class="fa fa-filter"></i>
+            </button>
+        </div>
+        <div class="newsfeed-sidebar-content">
+            <app-dashboard-newsfeed-sidebar-trending [class.hidden]="trendingHide">
+            </app-dashboard-newsfeed-sidebar-trending>
+            <app-dashboard-newsfeed-sidebar-following [class.hidden]="followingHide">
+            </app-dashboard-newsfeed-sidebar-following>
+            <app-dashboard-newsfeed-sidebar-filters [class.hidden]="filtersHide">
+            </app-dashboard-newsfeed-sidebar-filters>
+            <app-dashboard-newsfeed-sidebar-suggested [class.hidden]="suggestedHide">
+            </app-dashboard-newsfeed-sidebar-suggested>
+        </div>
+    </div>
+</div>

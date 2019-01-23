@@ -1,0 +1,106 @@
+$other-color: #e55812;
+$primary-color: #6bc435;
+$secondary-color: #048ba8;
+$strong-color: #002626;
+
+
+.fixed-sidebar-wrapper{
+    position: fixed;
+    width: 21.25%;
+    height: 85vh;
+    background-color: #fff;
+    box-shadow: 0vh .15vw .15vw 0vh rgba(0, 0, 0, .3);
+    .calendar-header{
+        width: 100%;
+        height: 20%;
+        background-color: $secondary-color;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .day{
+            margin:0 ;
+            padding: 0
+        }
+        .month{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            span{
+                float: left;
+            }
+            span + span{
+                float: right;
+            }
+        }
+        .year{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .specific-date{
+        background-color: #eee;
+        height:5%;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0vh .15vh .15vh 0vh rgba(0, 0, 0, .3);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: black;
+    }
+    .animation-slide1{
+        animation: slideIn .75s;
+    }
+    .animation-slide2{
+        animation: slideIn 1s;
+    }
+    .animation-slide3{
+        animation: slideIn 1.25s;
+    }
+    .animation-slide4{
+        animation: slideIn 1.5s;
+    }
+    .animation-slide5{
+        animation: slideIn 2.5s;
+    }
+    .event-list{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2.5%;
+        box-sizing: border-box;
+        .event-item{
+            width: 100%;
+            height: 18.5%;
+            background-color: #eee;
+            color: black;
+            padding: 2.5%;
+            box-sizing: border-box;
+            box-shadow: 0vh .15vh .15vh 0vh rgba(0, 0, 0, .3);
+            border-radius: .25%;
+            margin-bottom: 1.5%;
+        }
+        .create-event-button{
+            height: 7.5%;
+            font-size: 100%;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .event-footer{
+        background-color: #eee;
+        height: 5%;
+        width: 100%;
+        padding: 1%;
+        box-sizing: border-box;
+        text-align: center;
+           
+    }
+}

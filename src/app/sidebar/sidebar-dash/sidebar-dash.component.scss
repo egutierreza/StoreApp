@@ -1,0 +1,66 @@
+$other-color: #e55812;
+$primary-color: #6bc435;
+$secondary-color: #048ba8;
+$strong-color: #002626;
+
+
+.business-profile-avi{
+    width: 100%;
+    border-radius: .2vw;
+    box-shadow: .1vw .1vw .1vw 0 rgba(0, 0, 0, .3);
+}
+.wrapper{
+    width: 20%;
+    padding: .4vw;
+    box-sizing: border-box;
+}
+.business-profile-component{
+    background-color: $other-color;
+    color: white;
+    border-radius: .15vw;
+    box-shadow: 0vw .1vw .1vw 0vw rgba(0, 0, 0, .3);
+    width: 97%;
+    display: flex;
+    flex: auto;
+    height: 4.5vw;
+    .business-profile-content{
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        box-sizing: border-box;
+        width: 80%;
+    }
+
+}
+.business-profile-options{
+    position: relative;
+    bottom: .8vw;
+    width: 100%;
+    
+    button{
+        background-color: $other-color;
+        border: none;
+        color: white;
+    }
+    .business-switch{
+        margin-left: 4.5vw;
+    }
+    button:hover{
+        color: $primary-color;
+    }
+}
+.business-username{
+    font-size: .75vw;
+    position: relative;
+    bottom: .45vw;  
+}
+.business-profile-identity{
+    width: 100%;
+    padding: .3vw;
+}
+.business-name{
+    margin: 0; 
+    padding: 0;
+    font-size: 1vw;
+    margin-left: auto;
+}

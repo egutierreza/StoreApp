@@ -1,0 +1,35 @@
+<div class="calendar">
+        <div class="calendar-topbar">
+            <div class="day-title"> 
+                Sunday
+            </div>
+            <div class="day-title">
+                Monday
+            </div>
+            <div class="day-title">
+                Tuesday
+            </div>
+            <div class="day-title">
+                Wednesday
+            </div>
+            <div class="day-title">
+                Thursday
+            </div>
+            <div class="day-title">
+                Friday
+            </div>
+            <div class="day-title">
+                Saturday
+            </div>
+        </div>
+        <div class="calendar-content" >
+            <div class="calendar-cell" 
+                *ngFor="let calendarday of calendar;" 
+                [class.prev-cell]="calendarday.blur" 
+                (click)="focusedDate(calendarday)"
+            >  
+                <div class="day">{{calendarday.day}}</div> 
+            </div>
+        </div> 
+
+</div>

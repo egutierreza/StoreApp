@@ -1,0 +1,23 @@
+.dashboard-component-wrapper{
+	height: 85vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 7.6615fr 2.3385fr;
+	grid-gap: 1.25vw;
+	.dashboard-content{
+		height: 100%;
+		width: 100%;
+	}
+	.dashboard-sidebar{
+		height: 100%;
+		width: 100%;
+        
+	}
+}
+.modal-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .6);
+}

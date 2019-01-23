@@ -1,0 +1,94 @@
+$secondary-color: #048ba8;
+
+.dashboard-network-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    height: 100%;
+    margin-bottom: 1vw;
+    .profile-card{
+        height: 24vh;
+        width: 100%;
+        background-color: #eee;
+        box-shadow: 0vw .15vw .15vw 0vw rgba(0, 0, 0, .3);
+        background-image: url("https://orig00.deviantart.net/f51e/f/2015/041/e/4/cherry_blossom_twitter_header_by_taemeow-d8hghub.png");
+        background-size: cover;
+        animation: scaling .5s, fadein 1s;
+        .profile-card-content{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .8);
+            position: relative;
+            color: white;
+            .profile-stats{
+                display: flex;
+                height: 6vh;
+                width: 59%;
+                position: absolute;
+                text-align: center;
+                right: .5vw;
+                top: 10vh;
+                label{
+                    font-size: 70%;
+                }
+                span{
+                    font-size: 100%;
+                }
+                div + div{
+                    margin-left: .75vw;
+                }
+            }
+            .profile-card-engage{
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                box-sizing: border-box;
+                padding: 1vh;
+                background-color: #eee;
+                .empty-button{
+                    width: 5.5vw;
+                    height: 4vh;
+                    margin-left: auto;
+                    border-radius: .15vw;
+                    font-size: 65%;
+                    margin-left: .25vw;
+                    float: right;
+                }
+            }
+            .profile-card-identity{
+                position: absolute;
+                right: .75vw;
+                top: 0;
+                width: 59%;
+                text-align: right;
+                h3{
+                    margin-bottom: 0;
+                    font-size: 100%;
+                }
+                label{
+                    font-size: 70%;
+                }
+            }
+            .profile-card-avi{
+                height: 60%;
+                width: 30%;
+                top: 1vh;
+                left: .75vw;
+                border-radius: 2.5%;
+                box-shadow: 0 .15vw .15vw 0 rgba(0, 0, 0, .3);
+                border-style: solid;
+                position: absolute;
+            }
+        }
+        .profile-card-content:before{
+            content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    border-width:0vh 0vw 0vw 0vw;
+    border-style:solid;
+    border-color:$secondary-color transparent transparent $secondary-color;
+        }
+    }
+}

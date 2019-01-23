@@ -1,0 +1,19 @@
+<div class="dashboard-component-wrapper">
+    <div class="dashboard-content">
+        <app-dashboard-schedule-content [selectedDate]="selectedDate" (focusedCalendarDayEvent)="getClickedCalendarDay($event)">
+        </app-dashboard-schedule-content>       
+    </div>
+    <div class="dashboard-sidebar">
+    	<div class="sidebar-grid">
+    		<div class="sidebar-content fade-in-animation">
+                <app-dashboard-schedule-sidebar 
+                    (dateEvent)="getSelectedDate($event)"
+                    *ngIf="clickedCalendarDay"
+                    [clickedCalendarDay]="clickedCalendarDay"
+                    
+                >
+                </app-dashboard-schedule-sidebar>
+    		</div>
+    	</div>
+    </div>
+</div>

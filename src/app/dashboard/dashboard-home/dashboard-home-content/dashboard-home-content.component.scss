@@ -1,0 +1,173 @@
+$primary-color: #6bc435;
+$secondary-color: #048ba8;
+$strong-color: #002626;
+
+.dashboard-home-grid{
+    display: grid;
+    grid-template-rows: 1.25fr 1fr;
+    height: 100%;
+    width: 100%;
+    grid-gap: 1vw;
+    h1{
+        color: $strong-color;
+        font-size: 2vw;
+    }
+    h3{
+        color: $secondary-color;
+    }
+    .dashboard-home-upper-grid{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 1vw;
+        .dashboard-home-main{
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #EEE;
+            box-shadow: 0vw .1vw .1vw 0vw rgba(0, 0, 0, .6);
+            border-radius: .15vw;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            .upcomingAppointments{
+            }
+            .alertColumn{
+                background-color: $secondary-color;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                text-align: center;
+                box-sizing: border-box;
+                div{
+                    flex: 1;
+                    font-size: 1vw;
+                    padding: .25vw;
+                    .fa{
+                        font-size: 3vw;
+                        padding-bottom: .25vw;
+                    }
+                }
+
+            }
+            h2{
+                margin: 0;
+            }
+
+        }
+        .dashboard-home-calendar{
+            height: 100%;
+            width: 100%;
+            background-color: #eee;
+            box-shadow: 0vw .1vw .1vw 0vw rgba(0, 0, 0, .6);
+            border-radius: .15vw;
+            box-sizing: border-box;
+            .calendar-title{
+                background-color: $strong-color;
+                color: white;
+                height: 9%;
+                padding: .25vw;
+                text-align: center;
+                font-size: 1.25vw;
+                border-radius-top-right: .15vw;
+                border-radius-top-left: .15vw;
+                box-sizing: border-box;
+            }
+            .month-year-picker{
+                text-align: center;
+                background-color: $secondary-color;
+                height:30%;
+                color: white;
+                padding: 1.25vw;
+                box-sizing: border-box;
+                h2{
+                    margin: 0;
+                    font-size: 2vw;
+                }
+                h5{
+                    margin: 0;
+                    font-size: 1vw;
+                }
+            }
+            .calendar-body{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                font-size: 1vw;
+                height: 70%;
+                box-sizing: border-box;
+                .calendar-row{
+                    display: flex;
+                    background-color: white;
+                    width: 100%;
+                    flex: auto;
+                    box-sizing: border-box;
+                    .calendar-cell{
+                        width: 100%;
+                        box-sizing: border-box;
+                        flex: auto;
+                        padding-top: .4vw;
+                        margin: .5%;
+                    }
+                    .calendar-cell:hover{
+                        background-color: $secondary-color;
+                        color: white;
+                        transition: .1s;
+                    }
+                    .rollover{
+                        color:  #b3b3b3; 
+                    }
+                }
+                .day-label-row{
+                    background-color: $strong-color;
+                    color:white;
+                    .calendar-cell:hover{
+                        background-color: $strong-color;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .dashboard-home-lower-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1vw;
+        .dashboard-one{
+            height: 100%;
+            width: 100%;
+            background-color: #EEE;
+            box-shadow: 0vw .1vw .1vw 0vw rgba(0, 0, 0, .6);
+            border-radius: .15vw;
+            box-sizing: border-box;
+            padding-left: 1vw;
+            padding-right: 1vw;
+        }
+        .dashboard-home-stats{
+            height: 100%;
+            width: 100%;
+            background-color: #eee;
+            box-shadow: 0vw .1vw .1vw 0vw rgba(0, 0, 0, .6);
+            border-radius: .15vw;
+            box-sizing: border-box;
+            padding: 1vw;
+            color: $strong-color;
+            text-align: center;
+            font-size: 2vw;
+            .timeline-stats{
+                display: flex;
+                div{
+                    font-size: 1vw;
+                    flex: 1;
+                    span{
+                        font-size: 1.5vw;
+                    } 
+                }
+            }
+            .fa{
+                font-size: 6vw;
+                padding: 1vw;
+            }
+        }
+    }
+}

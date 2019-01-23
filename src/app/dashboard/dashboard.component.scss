@@ -1,0 +1,138 @@
+$primary-color: #6bc435;
+$secondary-color: #e55812;
+
+.dashboard-component-wrapper{
+	height: 85vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 7.6615fr 2.3385fr;
+	grid-gap: 1.25vw;
+	.dashboard-content{
+		height: 100%;
+		width: 100%;
+	}
+	.dashboard-sidebar{
+		height: 100%;
+		width: 100%;
+        
+	}
+}
+.shadow-overlay{
+    position: fixed;
+    width: 72.5vw;
+    background-color: #f6e8ea;
+    height: 11vh;
+    z-index: 1;
+    left: 5.5vw;
+    top: 0;
+}
+.fixed-grid-wrapper{
+    position: fixed;
+    height: 9vh;
+    width: 21vw;
+    z-index: 3;
+    right: 1vw;
+    box-sizing: border-box;
+}
+.business-profile-component{
+    background-color: $secondary-color;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    box-shadow: 0vw .1vw .1vw 0vw rgba(0, 0, 0, .3);
+    border-radius: .15vw;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    .wrapper{
+        padding: .5vw;
+    }
+    .business-profile-avi{
+        height: 100%;
+        width: 100%;
+    }
+    .business-profile-content{
+        padding: .5vw;
+        padding-left: 0;
+        box-sizing: border-box;
+        font-size: 75%;
+        backgorund-color: $secondary-color;
+        .business-name{
+            margin: 0;
+            padding: 0;
+        }
+        .business-profile-options{
+           button{
+               border: none;
+               color: white;
+               box-shadow: none;
+               background-color: #e55812;
+           } 
+            
+        }
+    }
+}
+.shadow{
+}
+.lg{
+    font-size: 2vw;
+    padding-top: .5vw;
+}
+.button-col{
+    button + button{
+    }
+}
+.grid-wrapper-main{
+    display: grid;
+    width: 100%;
+    height: 97%;
+    margin-top: 1vw;
+    grid-gap: 1vw;
+    grid-template-rows: 1fr auto; 
+}
+.dashboard-content{
+    min-height: 86vh;
+    margin-right: 1vw;
+    overflow-y: hidden;
+}
+.toolbar{
+    background-color: $primary-color;
+    color: white;
+    border-radius: .15vw;
+    box-shadow: 0vw .1vw .3vw 0vw rgba(0, 0, 0, .6); // blurred 10px shadow
+    padding: 0;
+    position: fixed;
+    width: 69.7%;
+    z-index: 3;
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .25vw;
+            font-size: 1vw;
+        }
+        li{
+            flex: 1;
+            height: 100%;
+        }
+        li:hover{
+            background-color: white;
+            color: $primary-color;
+            a{
+                color: $primary-color;
+            }
+            -webkit-transition: .25s; /* Safari */
+            transition: .25s;
+
+        }
+    }
+    
+}

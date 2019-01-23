@@ -1,0 +1,100 @@
+$other-color: #e55812;
+$primary-color: #6bc435;
+$secondary-color: #048ba8;
+$strong-color: #002626;
+
+
+
+
+.fixed-sidebar-wrapper{
+    position: fixed;
+    width: 21.25%;
+       
+}
+    
+
+.newsfeed-sidebar-content{
+    min-height: 67.75vh;
+}
+.newsfeed-menu{
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+    border-radius: .15vw;
+    box-shadow: 0vw .1vw .1vw 0vw rgba(0, 0, 0, .3);
+    .menu-searchbar{
+        padding: 1vw;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: .15vw;
+        input{
+            padding: .25vw;
+            box-sizing: border-box;
+            border: none;
+            height: 1.75vw;
+            width: 90%;
+            border-radius: .1vw;
+            border-radius-top-right: 0vw;
+            border-radius-bottom-right: 0vw;
+        }
+        .search-button{
+            border:none;
+            height:1.75vw;
+            border-radius-top-right: .15vw;
+            border-radius-bottom-right: .15vw;
+            color: white;
+            background-color: $secondary-color;
+        }
+        
+    }
+}
+.newsfeed-menu-options{
+    width: 100%;
+    display: grid;
+    height: 7.5%;
+    grid-template-columns: repeat(3, 1fr) .5fr;
+    button{
+        border: none;
+        padding: .5vw;
+        box-sizing: border-box;
+    }
+    label{
+        font-size: .9vw;
+    }
+    i{
+        font-size: 1vw;
+    }
+}
+.newsfeed-trending{
+    padding: 1vw;
+    background-color: white;
+    
+}
+.newsfeed-trending h4{
+    margin: 0;
+    padding: 0;
+}
+.trending-list{
+    list-style: none;
+    padding-left: 0;
+    li + li{
+        margin-top: .5vw;
+    }
+    .trending-item{
+        font-size: 1vw;
+
+        .trending-term{
+            font-weight: bold;
+        }
+       .trending-item-description{
+            margin: 0;
+            padding: 0;
+        }
+        .trending-impact{
+            font-size: .8vw;
+        }
+    }
+}
+.hidden{
+    display: none;
+}

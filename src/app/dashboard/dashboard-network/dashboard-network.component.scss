@@ -1,0 +1,18 @@
+.dashboard-component-wrapper{
+	height: 85vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 7.6615fr 2.3385fr;
+	grid-gap: 1.25vw;
+	.dashboard-content{
+		height: 100%;
+		width: 100%;
+	}
+	.dashboard-sidebar{
+		height: 100%;
+		width: 100%;
+        
+	}
+}
+
+

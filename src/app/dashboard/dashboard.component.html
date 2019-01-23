@@ -1,0 +1,42 @@
+<div class="grid-wrapper-main">    
+    <div class="toolbar fade-in-animation">
+        <ul role="navigation">
+            <li><a routerLink="/dashboard"><i class="fa fa-home lg"></i><br>Home</a></li>
+            <li><a routerLink="/dashboard/newsfeed"><i class="fa fa-feed lg"></i><br>Newsfeed</a></li>
+            <li><a routerLink="/dashboard/store"><i class="fa fa-shopping-basket lg"></i><br>Store</a></li>
+            <li><a routerLink="/dashboard/schedule"><i class="fa fa-calendar lg"></i><br>Schedule</a></li>
+            <li><a routerLink="/dashboard/network"><i class="fa fa-group lg"></i><br>Network</a></li>
+            <li><a routerLink="/dashboard/employees"><i class="fa fa-id-card-o lg"></i><br>Employees</a></li>
+            <li><a routerLink="/dashboard/settings"><i class="fa fa-gear lg"></i><br>Advanced</a></li>
+        </ul>
+    </div>
+    <div class="fixed-grid-wrapper fade-in-animation">
+        <div class="business-profile-component">
+            <div class="wrapper">
+                <img class="business-profile-avi" src="https://pbs.twimg.com/profile_images/1006989963081084933/wsR4bOQO_400x400.jpg">
+            </div>
+            <div class="business-profile-content">
+                <div class="business-profile-identity">
+                    <h4 class="business-name">Some Company Name</h4>
+                    <label class="business-username">@BusinessUsername</label>
+                </div>
+                <div class="business-profile-options button-group">
+                    <button class="business-messages">
+                        <i class="fa fa-envelope"> Inbox</i>
+                    </button>
+                    <button class="business-alerts">
+                        <i class="fa fa-bell"> Alerts</i>
+                    </button>
+                    <button class="business-switch">
+                        <i class="fa fa-refresh"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow-overlay"></div>
+    <div class="shadow"></div>
+    <div class="dashboard-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

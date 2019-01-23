@@ -1,0 +1,30 @@
+.newsfeed-trending{
+    padding: 1vw;
+    background-color: white;
+    
+}
+.newsfeed-trending h4{
+    margin: 0;
+    padding: 0;
+}
+.trending-list{
+    list-style: none;
+    padding-left: 0;
+    li + li{
+        margin-top: .5vw;
+    }
+    .trending-item{
+        font-size: 1vw;
+
+        .trending-term{
+            font-weight: bold;
+        }
+       .trending-item-description{
+            margin: 0;
+            padding: 0;
+        }
+        .trending-impact{
+            font-size: .8vw;
+        }
+    }
+}
